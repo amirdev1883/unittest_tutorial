@@ -5,7 +5,7 @@ class Person:
         self.lname = lname
 
     def get_fullname(self) -> str:
-        return f'{self.fname} - {self.lname}'
+        return f'{self.fname}{self.lname}'
 
     def create_email(self):
-        
+        return f'{self.get_fullname()}@email.com'.replace(' ', '')
